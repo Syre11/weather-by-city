@@ -10,7 +10,8 @@ N/A
 ## Usage
 
 Enter a city name into the search box and click search and you will be provided current weather and a 5 day forecast for that city.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+
+Link to deployed page: https://syre11.github.io/weather-by-city/
 
 ![Screenshot of the webpage](./assets/images/Screenshot%202022-11-06%20154017.png)
 
