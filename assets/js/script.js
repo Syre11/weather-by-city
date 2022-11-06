@@ -131,48 +131,48 @@ function getforecastApi() {
 
     //ADDS 1ST OF 5 DAY FORECAST
     var date = document.createElement("h4");
-    var momDate = moment.unix(jsonArray.list[4].dt).format("M/D/YYYY")
+    var momDate = moment.unix(jsonArray.list[7].dt).format("M/D/YYYY")
     date.textContent = momDate
     firstDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[4].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[7].weather[0].icon + '@2x.png'
     firstDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
-    temp.textContent = "Temp: " + jsonArray.list[4].main.temp + " °F"
+    temp.textContent = "Temp: " + jsonArray.list[7].main.temp + " °F"
     firstDayEl.appendChild(temp);
 
     var wind = document.createElement("p")
-    wind.textContent = "Wind: " + jsonArray.list[4].wind.speed + " MPH"
+    wind.textContent = "Wind: " + jsonArray.list[7].wind.speed + " MPH"
     firstDayEl.appendChild(wind);
 
     var humidity = document.createElement("p")
-    humidity.textContent = "Humidity: " + jsonArray.list[4].main.humidity + "%"
+    humidity.textContent = "Humidity: " + jsonArray.list[7].main.humidity + "%"
     firstDayEl.appendChild(humidity);
 
 
     
     //ADDS 2ND OF 5 DAY FORECAST
     var date = document.createElement("h4");
-    var momDate = moment.unix(jsonArray.list[12].dt).format("M/D/YYYY")
+    var momDate = moment.unix(jsonArray.list[15].dt).format("M/D/YYYY")
     date.textContent = momDate
     secondDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[12].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[15].weather[0].icon + '@2x.png'
     secondDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
-    temp.textContent = "Temp: " + jsonArray.list[12].main.temp + " °F"
+    temp.textContent = "Temp: " + jsonArray.list[15].main.temp + " °F"
     secondDayEl.appendChild(temp);
 
     var wind = document.createElement("p")
-    wind.textContent = "Wind: " + jsonArray.list[12].wind.speed + " MPH"
+    wind.textContent = "Wind: " + jsonArray.list[15].wind.speed + " MPH"
     secondDayEl.appendChild(wind);
 
     var humidity = document.createElement("p")
-    humidity.textContent = "Humidity: " + jsonArray.list[12].main.humidity + "%"
+    humidity.textContent = "Humidity: " + jsonArray.list[15].main.humidity + "%"
     secondDayEl.appendChild(humidity);
     
     
@@ -180,24 +180,24 @@ function getforecastApi() {
 
     //ADDS 3RD OF 5 DAY FORECAST
     var date = document.createElement("h4");
-    var momDate = moment.unix(jsonArray.list[20].dt).format("M/D/YYYY")
+    var momDate = moment.unix(jsonArray.list[23].dt).format("M/D/YYYY")
     date.textContent = momDate
     thirdDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[20].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[23].weather[0].icon + '@2x.png'
     thirdDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
-    temp.textContent = "Temp: " + jsonArray.list[20].main.temp + " °F"
+    temp.textContent = "Temp: " + jsonArray.list[23].main.temp + " °F"
     thirdDayEl.appendChild(temp);
 
     var wind = document.createElement("p")
-    wind.textContent = "Wind: " + jsonArray.list[20].wind.speed + " MPH"
+    wind.textContent = "Wind: " + jsonArray.list[23].wind.speed + " MPH"
     thirdDayEl.appendChild(wind);
 
     var humidity = document.createElement("p")
-    humidity.textContent = "Humidity: " + jsonArray.list[20].main.humidity + "%"
+    humidity.textContent = "Humidity: " + jsonArray.list[23].main.humidity + "%"
     thirdDayEl.appendChild(humidity); 
     
     
@@ -206,24 +206,24 @@ function getforecastApi() {
 
     //ADDS 4TH OF 5 DAY FORECAST
     var date = document.createElement("h4");
-    var momDate = moment.unix(jsonArray.list[28].dt).format("M/D/YYYY")
+    var momDate = moment.unix(jsonArray.list[31].dt).format("M/D/YYYY")
     date.textContent = momDate
     fourthDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[28].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[31].weather[0].icon + '@2x.png'
     fourthDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
-    temp.textContent = "Temp: " + jsonArray.list[28].main.temp + " °F"
+    temp.textContent = "Temp: " + jsonArray.list[31].main.temp + " °F"
     fourthDayEl.appendChild(temp);
 
     var wind = document.createElement("p")
-    wind.textContent = "Wind: " + jsonArray.list[28].wind.speed + " MPH"
+    wind.textContent = "Wind: " + jsonArray.list[31].wind.speed + " MPH"
     fourthDayEl.appendChild(wind);
 
     var humidity = document.createElement("p")
-    humidity.textContent = "Humidity: " + jsonArray.list[28].main.humidity + "%"
+    humidity.textContent = "Humidity: " + jsonArray.list[31].main.humidity + "%"
     fourthDayEl.appendChild(humidity);     
 
 
@@ -233,24 +233,24 @@ function getforecastApi() {
 
     //ADDS 5TH OF 5 DAY FORECAST
     var date = document.createElement("h4");
-    var momDate = moment.unix(jsonArray.list[36].dt).format("M/D/YYYY")
+    var momDate = moment.unix(jsonArray.list[39].dt).format("M/D/YYYY")
     date.textContent = momDate
     fifthDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[36].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[39].weather[0].icon + '@2x.png'
     fifthDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
-    temp.textContent = "Temp: " + jsonArray.list[36].main.temp + " °F"
+    temp.textContent = "Temp: " + jsonArray.list[39].main.temp + " °F"
     fifthDayEl.appendChild(temp);
 
     var wind = document.createElement("p")
-    wind.textContent = "Wind: " + jsonArray.list[36].wind.speed + " MPH"
+    wind.textContent = "Wind: " + jsonArray.list[39].wind.speed + " MPH"
     fifthDayEl.appendChild(wind);
 
     var humidity = document.createElement("p")
-    humidity.textContent = "Humidity: " + jsonArray.list[36].main.humidity + "%"
+    humidity.textContent = "Humidity: " + jsonArray.list[39].main.humidity + "%"
     fifthDayEl.appendChild(humidity);        
   })
 }
