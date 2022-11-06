@@ -33,7 +33,7 @@ function getLocation() {
     cityInput.value = cityInput.value.replace(" ", "+")
   };
 
-  var requestURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityInput.value + '&limit=1&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
+  var requestURL = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput.value + '&limit=1&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
 
   fetch(requestURL)
       .then(function(response) {
@@ -119,7 +119,7 @@ function deleteChild() {
 
 //function to get info for 5 day forecast
 function getforecastApi() {
-  var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
+  var requestURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
 
   fetch(requestURL)
   .then(function(response) {
@@ -136,7 +136,7 @@ function getforecastApi() {
     firstDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.list[4].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[4].weather[0].icon + '@2x.png'
     firstDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
@@ -160,7 +160,7 @@ function getforecastApi() {
     secondDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.list[12].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[12].weather[0].icon + '@2x.png'
     secondDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
@@ -185,7 +185,7 @@ function getforecastApi() {
     thirdDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.list[20].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[20].weather[0].icon + '@2x.png'
     thirdDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
@@ -211,7 +211,7 @@ function getforecastApi() {
     fourthDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.list[28].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[28].weather[0].icon + '@2x.png'
     fourthDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
@@ -238,7 +238,7 @@ function getforecastApi() {
     fifthDayEl.appendChild(date);
 
     var symbol = document.createElement("img")
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.list[36].weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.list[36].weather[0].icon + '@2x.png'
     fifthDayEl.appendChild(symbol);
 
     var temp = document.createElement("p")
@@ -258,7 +258,7 @@ function getforecastApi() {
 
 //function to get today's weather info
 function getTodayApi() {
-  var requestURL = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
+  var requestURL = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e4f7fa74cca6af69d01f1e01654e6cc3'
 
   fetch(requestURL)
   .then(function(response) {
@@ -273,7 +273,7 @@ function getTodayApi() {
     todayResultsEl.appendChild(date);
 
     var symbol = document.createElement("img");
-    symbol.src = 'http://openweathermap.org/img/wn/' + jsonArray.weather[0].icon + '@2x.png'
+    symbol.src = 'https://openweathermap.org/img/wn/' + jsonArray.weather[0].icon + '@2x.png'
     todayResultsEl.appendChild(symbol)
 
     var temp = document.createElement("p")
