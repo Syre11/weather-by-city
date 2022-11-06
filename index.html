@@ -10,42 +10,50 @@
   integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
   crossorigin="anonymous"
   />
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
+
   <title>Weather Dashboard</title>
 </head>
 <body>
   <header>
-    <h1>Server-Side APIs</h1>
+    <h1>Weather Dashboard</h1>
   </header>
 
-  <div>
-    <h2>Search for a City:</h2>
-    <input id="cityInput" type="search" placeholder="Enter city name">
-    <button class="searchBtn btn btn-primary" type="search">Search</button>
+  <div class="container-fluid row">
+    <div class="container col-2">  
+      <div>
+      <h2>Search for a City:</h2>
+      <input id="cityInput" class="form-control" type="search" placeholder="Enter city name">
+      <button class="searchBtn btn btn-primary" type="search">Search</button>
+      </div>
+
+      <div class="prevSearch">
+      <p>Search</p>
+      <p>Search</p>
+      <p>Search</p>
+      <p>Search</p>
+      <p>Search</p>
+      </div>
+    </div>
+
+    <div class="container col-8">
+      <div class="todayResults">
+        <p>today result</p>
+      </div>
+
+      <div class="fiveDay row">
+        <!-- these children will need to be assigned class="col" -->
+        <div class="firstDay col card"></div>
+        <div class="secondDay col card"></div>
+        <div class="thirdDay col card"></div>
+        <div class="fourthDay col card"></div>
+        <div class="fifthDay col card"></div>
+      </div>
+    </div>
   </div>
-
-  <div class="prevSearch col">
-    <p>Search</p>
-    <p>Search</p>
-    <p>Search</p>
-    <p>Search</p>
-    <p>Search</p>
-  </div>
-
-
-  <div class="todayResults container">
-    <p>today result</p>
-
-  </div>
-
-  <div class="5dayResults  row">
-    <!-- these children will need to be assigned class="col" -->
-    <p class="col">5day result</p>
-    <p class="col">5day result</p>
-    <p class="col">5day result</p>
-    <p class="col">5day result</p>
-    <p class="col">5day result</p>
-  </div>
-
 
   <script src="./assets/js/script.js"></script>
 </body>
