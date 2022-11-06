@@ -8,10 +8,6 @@
   padding-top: 10px;
 }
 
-.card {
-  padding: 10px;
-}
-
 .inputBox {
   margin: 5px 0;
 }
@@ -20,3 +16,15 @@
   background-color: rgb(202, 227, 255);
 }
 
+.card {
+  padding: 10px;
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.btn-secondary {
+  margin: 5px;
+}
