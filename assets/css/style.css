@@ -1,0 +1,22 @@
+.header {
+  background-image: linear-gradient(to right, rgb(31, 136, 255), rgb(73, 71, 160));
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mainSec {
+  padding-top: 10px;
+}
+
+.card {
+  padding: 10px;
+}
+
+.inputBox {
+  margin: 5px 0;
+}
+
+.fiveDay div {
+  background-color: rgb(202, 227, 255);
+}
+

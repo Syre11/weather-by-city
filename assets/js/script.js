@@ -7,10 +7,14 @@ var secondDayEl = document.querySelector(".secondDay")
 var thirdDayEl = document.querySelector(".thirdDay")
 var fourthDayEl = document.querySelector(".fourthDay")
 var fifthDayEl = document.querySelector(".fifthDay")
-
+var resultsEl = document.querySelector(".results")
 
 var lat = "";
 var lon = "";
+
+
+resultsEl.setAttribute("style", "display: none")
+
 
 function getLocation() {
   //replaces spaces in user input with + to work with api url
@@ -178,4 +182,5 @@ function getforecastApi() {
 searchBtnEl.addEventListener("click", function() {
   // getApi();
   getLocation();
+  resultsEl.setAttribute("style", "display: block")
 });
